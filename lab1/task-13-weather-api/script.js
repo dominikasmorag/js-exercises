@@ -5,8 +5,6 @@ const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitu
 
 displayData(url);
 
-console.log(changeUrl(50.41, 20.31));
-
 async function getData(url) {
     try {
         const response = await fetch(url);
