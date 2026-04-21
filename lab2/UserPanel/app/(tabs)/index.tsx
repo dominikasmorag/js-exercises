@@ -63,7 +63,7 @@ const Form = ({name, setName, email, setEmail, city, setCity, bio, setBio, error
       {Object.values(errors).map((error, index) => (
         <Text key={index} style={styles.errorText}>{error}</Text>
       ))}{success ? ( <Text style={styles.successText}>{success}</Text>) : null}
-      <Pressable style={[styles.saveButton, {marginTop: 30, marginBottom: 30, alignItems: 'center'}]} onPress={() => validateData()}><Text style={styles.mediumText}>Zapisz zmiany</Text></Pressable>
+      <Pressable style={[styles.saveButton, {marginTop: 30, marginBottom: 60, alignItems: 'center'}]} onPress={() => validateData()}><Text style={styles.mediumText}>Zapisz zmiany</Text></Pressable>
     </View>
       </View>
   )
