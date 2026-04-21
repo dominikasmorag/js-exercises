@@ -1,18 +1,11 @@
-import { Tabs } from 'expo-router';
+import { Stack } from 'expo-router';
 
 export default function Layout() {
   return (
-    <Tabs
+    <Stack
       screenOptions={{
-        tabBarStyle: { display: 'none' },
+        headerShown: false,
       }}
-    >
-      <Tabs.Screen
-        name="index"
-        options={{
-          title: 'Panel użytkownika',
-        }}
-      />
-    </Tabs>
+    />
   );
 }

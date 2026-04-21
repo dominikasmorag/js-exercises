@@ -150,8 +150,8 @@ const validateData = () => {
 
   return (
     <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
-    <ScrollView style={[styles.body, dark ? {backgroundColor: '#121212'} : styles.body]} keyboardShouldPersistTaps="handled">
       <Header theme={theme}/>
+    <ScrollView style={[styles.body, dark ? {backgroundColor: '#121212'} : styles.body]} keyboardShouldPersistTaps="handled">
       <SettingsRow label={"Powiadomienia"} right=">" onPress={() => console.log("Powiadomienia")} theme={theme} />
       <SettingsRow label={"Prywatność"} right=">" onPress={() => console.log("Prywatność")} theme={theme} />
       <SettingsRow label={"Ciemny motyw"} right={dark ? "ON" : "OFF" } onPress={toggleMode} theme={theme} />
